@@ -18,10 +18,9 @@ namespace WindowsFormTreeView
             public string title { get; set; }
             public int? parent_id { get; set; }
         }
-
-
         public Form1()
         {
+
             InitializeComponent();
         }
 
@@ -78,6 +77,16 @@ namespace WindowsFormTreeView
             {
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
